@@ -107,7 +107,7 @@ An example using several attributes:
 ```html
 <div
     data-app-alt-url="https://videourl.com"
-    data-app-alt-msg="This video is not compatible with the app. Please click the button to open it in a browser."
+    data-app-alt-msg="This video is not compatible with the app."
     data-app-alt-url-type="button"
     data-app-alt-url-label="Watch video"
     >
