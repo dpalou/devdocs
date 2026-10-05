@@ -48,6 +48,10 @@ In the example above, if the `username` user and the `https://domain.com` site a
 
 If you specify a token in the URL, the user will be authenticated automatically in the app. This is really useful for external apps and systems. For example, you can use this feature for SSO systems. The user token can be found in the database table `mdl_external_tokens`.
 
+:::note[Notice]
+Token-based auto-login in deep links will only work if the setting "Enable auto-login in deep links" is turned on in Moodle admin settings. Please note that this setting requires Moodle LMS 5.3 or later.
+:::
+
 The private token is used by the app to auto-login the user in the browser, and it will only be used if you also specify a token in the URL. If you specify a private token but not a token, the private token will be ignored. The private token can also be found in the database table `mdl_external_tokens`.
 
 It isn't recommended to include the token and private token in links that will be rendered by a browser or apps that can be inspected. Please notice that anyone with the token will be able to authenticate as the user the token belongs to.
